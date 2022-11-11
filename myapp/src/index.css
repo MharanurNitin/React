@@ -1,47 +1,52 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 *{
-    font-family: 'Poppins', sans-serif;
-    box-sizing: border-box;
-}
-body{
-    background-image: linear-gradient(to left top,pink,orange);
-    height:100%;
     margin:0;
     padding:0;
-
-}
-h1{
+    box-sizing:border-box;
     text-align:center;
-    font-family:cursive;
 }
-.container,.cards{
+.top_heading{
+   background-color:#ccc;
+   color:aliceblue;
+   font-family: Arial, Helvetica, sans-serif;
+   letter-spacing: 2px;
+   text-align:center;
+   padding:10px;
+   font-size:18px;
   
-    display:flex;
-    align-items:center;
-    justify-content:center; 
-    flex-direction:column;
 }
 .cards{
-    width:40%;
-    box-shadow:rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    background-color:#000;
-    color:#fff;
-    margin:auto;
-    border-bottom:3px solid white;
-    padding:10px;
+    display:grid;
+    /* align-items:ceter; */
+    /* justify-content:center; */
+   grid-template-columns: repeat(4,1fr);
+   
+
 }
-img{
-    width:70%;
-    border:1px solid white; 
-    box-shadow: rgba(8, 8, 8, 0.25) 0px 54px 55px, rgba(107, 102, 102, 0.12) 0px -12px 30px, rgba(75, 52, 52, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+.card{
+    /* width:22%; */
+    height:auto;
+    border:1px solid black;
+    margin-left: 30px;
+    margin-top:30px;
+    background-color: #CFF5E7;
+}
+.card__img{
+    width:100%;
+}
+a{
+    text-decoration: none;
+    width:100%;
+    display:flex;
+    justify-content:center;
 }
 button{
-    margin-bottom:20px;
-    border-bottom: 2px solid green;
-    font-size:16px;
-    padding:2px 10px;
-    border-radius: 20%;
-}
-h2{
-   border-bottom:3px solid red;
+padding:3px 5px;
+font-size: 16px;
+font-family:'Times New Roman', Times, serif;
+font-weight: bold;
+background-color: blueviolet;
+cursor: pointer;
+color:white;
+border:0.8px solid gainsboro;
+margin-bottom:10px;
 }
